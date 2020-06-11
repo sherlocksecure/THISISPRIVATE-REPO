@@ -1,0 +1,16 @@
+title: '"><img src=x onerror=alert(1)>'
+description: '"><img src=x onerror=alert(1)>'
+template:
+  repo: '"greaterlessimg-srcx-onerroralert(1)greater-template'
+  name: '"greaterlessimg-srcx-onerroralert(1)greater'
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
